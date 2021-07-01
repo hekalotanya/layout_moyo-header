@@ -8,10 +8,13 @@
 body {
   min-width: 1024px;
   max-width: 1200px;
-  
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
 }
 
-header {
+.header {
   width: 100%;
   height: 60px;
   display: flex;
@@ -25,10 +28,7 @@ header {
   display: flex;
   justify-content: flex-end;
   position: relative;
-
   margin-right: 50px;
-  
-  
 }
 
 .link-box {
@@ -36,26 +36,18 @@ header {
   height: 60px;
   display: flex;
   align-items: center;
-  margin-right: 20px;
-  
-   
 }
 
-.link-box:last-child {
-  margin-right: 0;
+.link-box:not(:last-child) {
+  margin-right: 20px;
 }
 
 .logo_image {
-
   height: 40px;
   margin-left: 50px;
 }
 
 .nav_link {
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
   line-height: 60px;
   text-transform: uppercase;
   text-decoration: none;
